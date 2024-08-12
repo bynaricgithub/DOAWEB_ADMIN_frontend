@@ -15,7 +15,7 @@ const Header = () => {
         <div className="topbar-left	d-none d-lg-block">
           <div className="text-center">
             <a href="#" className="logo">
-              <img className="logo_msbte" src="assets/images/Msbte.png" height={60} alt="Msbte_logo" />
+              <img className="logo_msbte" src="assets/images/DOA-logo.png" height={60} alt="DOA_logo" />
             </a>
           </div>
         </div>

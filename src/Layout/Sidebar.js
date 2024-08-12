@@ -10,7 +10,7 @@ const Sidebar = (props) => {
 
   return currentUser ? (
     <div>
-      <div className="left side-menu" id="sidebar">
+      <div className="left side-menu col-sm-2" id="sidebar">
         <button
           type="button"
           className="button-menu-mobile button-menu-mobile-topbar open-left waves-effect"
@@ -82,6 +82,13 @@ const Sidebar = (props) => {
                 >
                   <img className="logos" src="assets/images/dashboard.png" />
                   <span className="p_logos"> Add Circulars</span>
+                </NavLink>
+                <NavLink
+                  className="nav-link waves-effect"
+                  to={{ pathname: "/news" }}
+                >
+                  <img className="logos" src="assets/images/dashboard.png" />
+                  <span className="p_logos"> Add News/Announcement</span>
                 </NavLink>
 
                 <NavLink

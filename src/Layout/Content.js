@@ -30,7 +30,7 @@ const Content = () => {
     <>
       <div>
         <Sidebar />
-        <div className="content-page">
+        <div className="content-page col-sm-10">
           <div className="content">
             <Header />
             <div className="page-content-wrapper ">

@@ -1098,10 +1098,10 @@ File: Menu
 .side-menu {
     bottom: 0;
     top: 50px;
-    width: 240px;
+    /* width: 240px; */
     padding: 20px 0;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    /* -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; */
     background: #ffffff;
     position: absolute;
     z-index: 99;

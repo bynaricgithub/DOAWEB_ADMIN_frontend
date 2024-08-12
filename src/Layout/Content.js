@@ -15,6 +15,7 @@ import EventVideo from "../Components/Admin/EventVideo";
 import GoverningCouncil from "../Components/Admin/GoverningCouncil";
 import GoverningBoard from "../Components/Admin/GoverningBoard";
 import Menu from "../Components/Admin/Menu";
+import News from "../Components/Admin/News";
 
 const Content = () => {
   const navigate = useNavigate();
@@ -39,6 +40,7 @@ const Content = () => {
                 <Route path="/latestUpdates" element={<LatestUpdate />} />
                 <Route path="/importantLinks" element={<ImportantLinks />} />
                 <Route path="/msbteOfficers" element={<Officers />} />
+                <Route path="/news" element={<News />} />
                 <Route
                   path="/governingCouncil"
                   element={<GoverningCouncil />}

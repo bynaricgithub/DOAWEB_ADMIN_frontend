@@ -18,50 +18,50 @@ import Menu from "../Components/Admin/Menu";
 import News from "../Components/Admin/News";
 
 const Content = () => {
-  const navigate = useNavigate();
-  const { currentUser } = useContext(UserContext);
+    const navigate = useNavigate();
+    const { currentUser } = useContext(UserContext);
 
-  useEffect(() => {
-    if (!localStorage.getItem("token")) {
-      navigate("/login");
-    }
-  });
-  return currentUser ? (
-    <>
-      <div>
-        <Sidebar />
-        <div className="content-page col-sm-10">
-          <div className="content">
-            <Header />
-            <div className="page-content-wrapper ">
-              <Routes>
-                <Route path="/home" element={<Home />} />
-                <Route path="/circular" element={<Circular />} />
-                <Route path="/latestUpdates" element={<LatestUpdate />} />
-                <Route path="/importantLinks" element={<ImportantLinks />} />
-                <Route path="/msbteOfficers" element={<Officers />} />
-                <Route path="/news" element={<News />} />
-                <Route
-                  path="/governingCouncil"
-                  element={<GoverningCouncil />}
-                />
-                <Route path="/governingBoard" element={<GoverningBoard />} />
+    useEffect(() => {
+        if (!localStorage.getItem("token")) {
+            navigate("/login");
+        }
+    });
+    return currentUser ? (
+        <>
+            <div>
+                <Sidebar />
+                <div className="content-page col-sm-10">
+                    <div className="content">
+                        <Header />
+                        <div className="page-content-wrapper ">
+                            <Routes>
+                                <Route path="/home" element={<Home />} />
+                                <Route path="/circular" element={<Circular />} />
+                                <Route path="/latestUpdates" element={<LatestUpdate />} />
+                                <Route path="/importantLinks" element={<ImportantLinks />} />
+                                <Route path="/msbteOfficers" element={<Officers />} />
+                                <Route path="/news" element={<News />} />
+                                <Route
+                                    path="/governingCouncil"
+                                    element={<GoverningCouncil />}
+                                />
+                                <Route path="/governingBoard" element={<GoverningBoard />} />
 
-                <Route path="/photo" element={<UploadPhoto />} />
+                                <Route path="/photo" element={<UploadPhoto />} />
 
-                <Route path="/photo" element={<UploadPhoto />} />
-                <Route path="/eventPhoto" element={<EventPhoto />} />
-                <Route path="/eventVideo" element={<EventVideo />} />
+                                <Route path="/photo" element={<UploadPhoto />} />
+                                <Route path="/eventPhoto" element={<EventPhoto />} />
+                                <Route path="/eventVideo" element={<EventVideo />} />
 
-                <Route path="/menu" element={<Menu />} />
-              </Routes>
+                                <Route path="/menu" element={<Menu />} />
+                            </Routes>
+                        </div>
+                    </div>
+                    <Footer />
+                </div>
             </div>
-          </div>
-          <Footer />
-        </div>
-      </div>
-    </>
-  ) : null;
+        </>
+    ) : null;
 };
 
 export default Content;

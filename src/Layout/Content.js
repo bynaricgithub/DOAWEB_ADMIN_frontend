@@ -16,6 +16,7 @@ import GoverningCouncil from "../Components/Admin/GoverningCouncil";
 import GoverningBoard from "../Components/Admin/GoverningBoard";
 import Menu from "../Components/Admin/Menu";
 import News from "../Components/Admin/News";
+import RegionalOffice from "../Components/Admin/RegionalOffice";
 
 const Content = () => {
     const navigate = useNavigate();
@@ -54,6 +55,7 @@ const Content = () => {
                                 <Route path="/eventVideo" element={<EventVideo />} />
 
                                 <Route path="/menu" element={<Menu />} />
+                                <Route path="/regionaloffice" element={<RegionalOffice />} />
                             </Routes>
                         </div>
                     </div>

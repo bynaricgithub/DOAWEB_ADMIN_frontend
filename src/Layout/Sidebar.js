@@ -130,6 +130,14 @@ const Sidebar = (props) => {
                                     <img className="logos" src="assets/images/dashboard.png" />
                                     <span className="p_logos"> Menu </span>
                                 </NavLink>
+
+                                <NavLink
+                                    className="nav-link waves-effect"
+                                    to={{ pathname: "/regionaloffice" }}
+                                >
+                                    <img className="logos" src="assets/images/dashboard.png" />
+                                    <span className="p_logos"> Regional Officers </span>
+                                </NavLink>
                             </li>
 
                             {/* <li className="has_sub hover_effect">
